@@ -1,0 +1,13 @@
+footer {
+    background-image: url('../../build/images/footer.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    /* Espaçamento responsivo usando clamp(mínimo, ideal, máximo) */
+    padding: 150px;
+    margin-top: 5rem;
+    
+    /* Garante que o footer ocupe toda a largura */
+    width: 100%;
+    box-sizing: border-box;
+}

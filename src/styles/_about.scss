@@ -1,0 +1,40 @@
+@use 'variables';
+
+.about{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: variables.$fonteHero;
+    &__equipe{
+        color: variables.$corTema;
+        text-align: center;
+    }
+    &__title{
+        color: variables.$corGelo;
+        text-align: center;
+    }
+    &__p{
+        text-align: center;
+        color: variables.$corGelo;
+    }
+    &__container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+        &__card{
+            &__box{
+                img{
+                    width: 350px;
+                    margin: 100px auto;
+                    display: block;
+
+                }
+            }
+
+        }
+    }
+}

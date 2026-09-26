@@ -1,0 +1,65 @@
+@use 'variables';
+
+.hero{
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+    @media (max-width: 768px){
+        max-width: 100%;
+        margin: 0;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            display: block;
+        }
+        &__boxLeft{
+            background-color: variables.$corSecundaria;
+            width: 420px;
+            height: 500px;
+            padding: 20px;
+
+            @media (max-width: 768px){
+                width: 100%;
+            }
+            .innerP{
+                letter-spacing: 2px;
+                color: variables.$corGelo;
+                margin-bottom: 20px;
+            }
+            h2{
+                color: variables.$corGelo;
+                font-family: variables.$fonteHero;
+                font-size: 48px;
+            }
+            .colorTheme{
+                color: variables.$corTema;
+            }
+            p{
+                line-height: 1.4;
+                margin: 20px 0;
+                color: variables.$corGelo;
+            }
+            button{
+                padding: 14px;
+                border: none;
+                background-color: variables.$corTema;
+                color: variables.$corGelo;
+                border-radius: 12px;
+                transition: all .5s ease;
+                cursor: pointer;
+                &:hover{
+                    background-color: variables.$corTemaHover;
+                }
+            }
+        }
+        &__boxRight{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

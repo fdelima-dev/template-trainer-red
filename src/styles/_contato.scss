@@ -1,0 +1,41 @@
+@use 'variables';
+
+label, input{
+    display: block;
+    margin: 20px 0;
+}
+.contact{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    &__title{
+        color: variables.$corGelo;
+        text-align: center;
+    }
+    &__container{
+        &__form{
+            form{
+                display: flex;
+                flex-direction: column;
+                label{
+                    color: variables.$corGelo;
+                }
+                input{
+                    padding: 10px;
+                }
+                textarea{
+                    height: 200px;
+                    resize: none;
+                }
+                button{
+                    width: 150px;
+                    margin: 20px 0;
+                    border: none;
+                    padding: 10px;
+                    background-color: variables.$corTema;
+                    color: variables.$corGelo;
+                }
+            }
+        }
+    }
+}

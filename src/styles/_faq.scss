@@ -1,0 +1,30 @@
+@use 'variables';
+
+.accordion{
+    max-width: 1440px;
+    width: 100%;
+    margin: 100px auto;
+}
+.pergunta{
+    width: 100%;
+    padding: 40px;
+    background-color: variables.$corSecundaria;
+    color: variables.$corGelo;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.resposta{
+    padding: 0 20px 20px;
+    border-bottom: 2px solid variables.$corGelo;
+    display: none;
+}
+.resposta p{
+    color: variables.$corGelo;
+}
+.resposta.active{
+    display: block;
+}

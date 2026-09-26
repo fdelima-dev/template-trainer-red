@@ -1,0 +1,29 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'faq';
+@use 'contato';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: variables.$fontePrincipal;
+    src: url('../../assets/Inter/inter.regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteHero;
+    src: url('../../assets/actor/Actor-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteBrand;
+    src: url('../../assets/Poppins/poppins.regular.ttf') format('truetype');
+}
+body{
+    font-family: variables.$fontePrincipal;
+    background-color: variables.$corFundo;
+}
